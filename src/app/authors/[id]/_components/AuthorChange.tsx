@@ -107,7 +107,7 @@ export const AuthorChange = ({id}:AuthorProps) => {
         Birth Year
       </label>
       <input 
-          {...register('birth_year', {required: "Campo requerido"})}
+          {...register('birth_year', {required: "Campo requerido", valueAsNumber: true})}
           type="number"
           placeholder="Birth Year"
           className="border border-white p-2"
