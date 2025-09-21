@@ -1,18 +1,11 @@
-'use client'
-
-import { AuthorsGrid } from "./componets/AuthorsGrid";
-
-interface Props {
-	params: {
-		id: string;
-	};
-}
+import { AuthorsGrid } from "./_components/AuthorsGrid";
 
 export default function AuthorsPage() {
-	return (
-		<div>
-			<h1>Authors</h1>
-			<AuthorsGrid />
-		</div>
-	);
+  return (
+    <div>
+      <h1>Authors</h1>
+      <AuthorsGrid/>
+
+    </div>
+  );
 }

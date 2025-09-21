@@ -1,6 +1,6 @@
-import { NextResponse } from "next/server";
+import type { Author } from "@/app/model/Author.interface";
 
-const AUTHORS = [
+export const AUTHORS: Author[] = [
   {
     "id": 1,
     "first_name": "Gabriel",
@@ -92,8 +92,3 @@ const AUTHORS = [
     "is_alive": false
   }
 ]
-
-
-export function GET(){
-  return NextResponse.json(AUTHORS) 
-}
